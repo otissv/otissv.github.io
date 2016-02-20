@@ -2,13 +2,13 @@
 
 
 ##Services
-###Front-end Development
+####Front-end Development
 Hand crafted websites and applications using the lates technologies to deliver your products in the most engaging way.
 
-###Backend Development
+####Backend Development
 Dynamic Web applications, Universal apps or APIs that deliver content fast and securly.
 
-###Database Development
+####Database Development
 Powerful agile NoSLQ databases allowing you to scale your apps fast and reliably.
 
 
