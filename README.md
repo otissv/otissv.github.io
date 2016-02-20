@@ -5,7 +5,7 @@ My current webiste. As always a work in progress :)
 
 ###Contact details
 Phone: +48 513 684 829  
-Email: [otissv@gmail.com](otissv@gmail.com)
+Email: [otissv@gmail.com](mail:otissv@gmail.com)  
 Pinterest: [otissv](https://www.pinterest.com/otissv/)   
 Github: [otissv](https://www.github.com/otissv)   
 NPM: [~otissv](https://www.npmjs.com/~otissv)  
