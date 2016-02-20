@@ -1,0 +1,147 @@
+/*
+* variables
+*/
+
+$home-background: rgb(2,136,253);
+$home-nav-item-active: rgb(2,136,209);
+$home-nav-item-background-hover: rgba(2, 136, 209, 0.5);
+
+
+/*
+* home
+*/
+.ov-home {
+
+  .ov-background {
+
+    background-color: $home-background;
+  }
+
+  .ov-nav-item.uk-active {
+    border-bottom: 3px solid $home-nav-item-active;
+  }
+
+  .ov-features {
+    background-color: $background-contrast-color;
+    padding: 50px 0;
+
+    h2 {
+      color: $secondary-text-color;
+      text-align      : center;
+      margin: 0 0 30px 0;
+    }
+  }
+
+  .ov-features-section {
+    margin: auto;
+    max-width       : 960px;
+    padding         : 0 15px 15px 15px;
+
+
+    > div {
+      padding: 0;
+    }
+  }
+
+  .ov-features-panel {
+    background: $grey1;
+    border-radius: $border-radius;
+    border: $border;
+
+    .ov-features-img {
+      height: 140px;
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 300px;
+      }
+    }
+  }
+
+  .ov-landing {
+    height: 100vh;
+    padding: 53px 5%;
+  }
+
+  .ov-landing-section {
+    background-color: #fff;
+    color           : $grey7;
+    margin          : -1px 0 50px 0;
+
+
+
+    .ov-devices{
+        @include background-image('/images/testimonial-bg.jpg');
+        width: 100%;
+        min-height: 272px;
+    }
+
+
+    .ov-testimonial-section {
+      padding: 25px 5%;
+      text-align: center;
+      vertical-align: middle;
+
+      .ov-quotemarks   {
+        display    : inline-block;
+        height   : 35px;
+        width    : auto;
+        transform: translateX(22px) translateY(-6px);
+      }
+
+      .ov-quote {
+        border-left: none;
+        display    : inline-block;
+        font-size  : 1.3rem;
+        font-style : italic;
+        padding    : 0;
+        text-align : center;
+        transform  : translateX(-30px);
+      }
+
+      .ov-testimonial {
+        text-align : left;
+      }
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-medium) {
+
+
+    .ov-features-panel {
+      height: 260px;
+
+      .ov-features-img {
+        height: 110px;
+
+        img {
+          height: 100px;
+          width: 217px;
+        }
+      }
+
+    }
+
+    .ov-features-section {
+      > div {
+        padding-left: 25px;
+        &:first-child {
+          padding: 0;
+        }
+      }
+    }
+
+    .ov-landing-section {
+      display: table;
+      .ov-testimonial-section, .ov-devices {
+        display: table-cell;
+          width: 50%;
+        }
+    }
+  }
+
+}

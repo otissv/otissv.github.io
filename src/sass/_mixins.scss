@@ -1,0 +1,7 @@
+@mixin background-image($url, $height: auto) {
+  background-image : url($url);
+  background-size  : cover;
+  background-repeat: no-repeat;
+  height           : $height;
+  width            : 100%;
+}

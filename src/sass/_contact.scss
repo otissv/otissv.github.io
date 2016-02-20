@@ -1,0 +1,86 @@
+/*
+* variables
+*/
+
+
+$contact-background  : rgb(211, 47, 47);
+$contact-nav-item-active: rgb(255, 47, 47);
+$background-hover: rgba(211,47,47,0.85);
+/*
+* contact
+*/
+.ov-contact {
+  .ov-background {
+    background-color: $contact-background;
+  }
+
+  .ov-nav-item.uk-active {
+    border-bottom: 3px solid $contact-nav-item-active;
+  }
+
+  .ov-button {
+    float: right;
+  }
+
+  .ov-info, .ov-social {
+    padding-top: 25px;
+  }
+
+  .ov-info, .ov-social p {
+    font-size  : 1.5rem;
+  }
+
+  .ov-info {
+    line-height: 1.2;
+    margin     : 25px auto;
+    min-width  : 250px;
+    max-width  : 200px;
+    text-align : center;
+  }
+
+  .ov-contact-form {
+    padding: 1px 5%;
+
+    .ov-form {
+      margin-bottom: 50px;
+      input {
+        border-left-width : 0;
+        border-right-width: 0;
+        border-top-width  : 0;
+      }
+
+      textarea {
+        width: 100%;
+      }
+    }
+  }
+
+  .ov-social {
+    font-size: 5rem;
+    padding: 35px 25px 80px;
+    text-align: center;
+
+    a {
+      text-shadow: $text-shadow2;
+      color: $text-color;
+
+      transition: color       0.3s ease,
+                  text-shadow 0.2s ease;
+
+      &:hover {
+        font-size: 4.9rem;
+        color: $grey3;
+        text-decoration: none;
+        text-shadow: $text-shadow1
+      }
+    }
+  }
+
+
+
+  @media screen and (min-width: $breakpoint-medium) {
+    .ov-info {
+      max-width: 600px;
+    }
+  }
+}

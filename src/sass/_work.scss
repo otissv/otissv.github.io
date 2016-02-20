@@ -1,0 +1,156 @@
+/*
+* variables
+*/
+$work-background               : rgb(103,58,183);
+$work-nav-item-active          : rgb(147,58,227);
+$work-nav-item-background-hover: rgba(103,58,183,0.85);
+
+
+
+$portfolio-items-padding    : 10px;
+$portfolio-item-width-medium: 667px;
+$portfolio-item-width-large : 849px;
+$porfolio-img-width-small   : 258px;
+$porfolio-img-width-medium  : 387px;
+$porfolio-img-width-large   : $porfolio-img-width-medium;
+$portfolio-tags-height      : 73px + $portfolio-items-padding;
+
+$ov-portfolio-body-padding: 15px;
+
+
+/*
+* work
+*/
+.ov-work {
+  .ov-background {
+    background-color: $work-background;
+  }
+
+  .ov-nav-item.uk-active {
+    border-bottom: 3px solid $work-nav-item-active;
+  }
+
+  .ov-portfolio {
+    color: inherit;
+    margin: 25px;
+    padding-top: 25px;
+  }
+
+
+  .ov-portfolio-item {
+    background   : $background-contrast-color;
+    border-radius: $border-radius;
+    box-shadow   : $shadow2;
+    margin       : 0 auto 25px auto;
+    position     : relative;
+    padding-left : 0;
+    width        : 100%;
+    transform    : scale(0.8);
+    transition   : transform 0.5s ease, box-shadow, 0.5s ease;
+  }
+
+  .ov-portfolio-item-inView {
+    box-shadow   : $shadow5;
+    transform    : scale(1);
+  }
+
+
+
+
+  .ov-porfolio-img {
+    border-radius: $border-radius $border-radius 0 0;
+    border-bottom: $border;
+  }
+
+  .ov-portfolio-body,
+  .ov-portfolio-links,
+  .ov-portfolio-tags {
+    padding: $portfolio-items-padding;
+    color: $grey6;
+  }
+
+  .ov-portfolio-body {
+    color: $secondary-text-color;
+    display: inline-block;
+    padding: $ov-portfolio-body-padding;
+  }
+
+  .ov-portfolio-links {
+    bottom: $portfolio-tags-height;
+  }
+
+  .ov-portfolio-tags {
+    border-top: 1px solid $border-color;
+    bottom    : 0;
+    height    : $portfolio-tags-height;
+
+    h4 {
+      margin: 0;
+    }
+
+   .uk-badge {
+     background-color: $grey6;
+   }
+  }
+
+
+  @media screen and (min-width: $breakpoint-small) {
+    .ov-porfolio-img {
+      border-radius: $border-radius 0 0 0;
+      border-bottom: none;
+      border-right : $border;
+      width        : $porfolio-img-width-small;
+    }
+
+    .ov-portfolio-body,
+    .ov-portfolio-links {
+      position: absolute;
+      left    : $porfolio-img-width-small;
+    }
+  }
+
+
+  @media screen and (min-width: $breakpoint-medium) {
+    .ov-headline {
+      // height: 80vh;
+    }
+    .ov-portfolio-item {
+
+      width: $portfolio-item-width-medium;
+    }
+
+    .ov-porfolio-img {
+      border-radius: $border-radius 0 0 $border-radius;
+      width        : $porfolio-img-width-medium;
+      height       : 290px;
+    }
+
+    .ov-portfolio-body {
+      height: (290px - $portfolio-tags-height);
+    }
+
+    .ov-portfolio-tags {
+      position: absolute;
+    }
+
+    .ov-portfolio-body,
+    .ov-portfolio-links,
+    .ov-portfolio-tags {
+      width   : ($portfolio-item-width-medium - $porfolio-img-width-medium);
+      left    : $porfolio-img-width-medium;
+    }
+  }
+
+
+  @media screen and (min-width: $breakpoint-large) {
+    .ov-portfolio-item {
+      width: $portfolio-item-width-large;
+    }
+
+    .ov-portfolio-body,
+    .ov-portfolio-links,
+    .ov-portfolio-tags {
+      width: $portfolio-item-width-large - $porfolio-img-width-large;
+    }
+  }
+}

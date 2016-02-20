@@ -1,0 +1,62 @@
+$text-font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$heading-font-family:  "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+$base-font-sm: 18px;
+$base-font-md: 14px;
+
+$grey1 : #FAFAFA;
+$grey2 : #F5F5F5;
+$grey3 : #EEEEEE;
+$grey4 : #E0E0E0;
+$grey5 : #BDBDBD;
+$grey6 : #9E9E9E;
+$grey7 : #757575;
+$grey8 : #616161;
+$grey9 : #424242;
+$grey10: #212121;
+
+
+
+$dark-primary-color    : #0288D1;
+$default-primary-color : #03A9F4;
+$light-primary-color   : #B3E5FC;
+$text-color            : $grey2;
+$accent-color          : #FFC107;
+$primary-text-color    : $grey10;
+$secondary-text-color  : $grey7;
+$divider-color         : $grey4;
+$border-color          : $grey3;
+
+
+$border: 1px solid $border-color;
+
+$shadow0: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+$shadow1: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+$shadow2: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+$shadow3: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+$shadow4: 0 16px 28px 0 rgba(0,0,0,.22),0 25px 55px 0 rgba(0,0,0,.21);
+$shadow5: 0 27px 24px 0 rgba(0,0,0,.2),0 40px 77px 0 rgba(0,0,0,.22);
+
+
+
+$text-shadow1: 1px 2px 2px rgba(0, 0, 0, 0.3);
+$text-shadow2: 2px 5px 10px rgba(0, 0, 0, 0.22);
+
+$nav-background-color-opacity: 0.8;
+$nav-background-color-opacity-medium: 0.5;
+
+$border-radius: 3px;
+
+
+$background-color          : $dark-primary-color;
+$background-dark-color     : $grey10;
+$background-contrast-color : $grey2;
+$text-color-contrast       : $secondary-text-color;
+$primary-color             : $accent-color;
+
+
+$section-max-width: 849px;
+
+$main-left: 100%;
+$me-background-color: $background-dark-color;
+$main-padding: 25px;

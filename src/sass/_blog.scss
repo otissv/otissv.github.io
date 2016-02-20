@@ -1,0 +1,20 @@
+/*
+* variables
+*/
+
+$blog-background: rgb(229, 229, 229);
+$blog-nav-item-active: rgb(185, 185, 185);
+$blog-nav-item-background-hover: rgba(185, 185, 185, 0.85);
+
+/*
+* about
+*/
+.ov-blog {
+  .ov-background {
+    background-color: $blog-background;
+  }
+
+  .ov-nav-item.uk-active{
+    border-bottom: 3px solid $blog-nav-item-active;
+  }
+}
