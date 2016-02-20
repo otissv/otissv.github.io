@@ -1,5 +1,7 @@
 # otissv.github.io
 
+My current website can be viewed at [http://otissv.github.io/](http://otissv.github.io)
+
 
 ##Services
 ####Front-end Development
