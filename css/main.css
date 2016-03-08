@@ -5728,7 +5728,8 @@ h3 {
 #ov-work-main,
 #ov-contact-main {
   display: none;
-  opacity: 0; }
+  opacity: 0;
+  transition: opacify 1s ease; }
 
 .ov-about .ov-headline,
 .ov-work .ov-headline,
@@ -5818,7 +5819,23 @@ h3 {
 
 .ov-home .ov-landing {
   height: 100vh;
-  padding: 53px 5%; }
+  display: table;
+  padding: 53px 5%;
+  background-image: url("/images/dream-builder-port.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: "100vh";
+  width: 100%;
+  min-height: 272px; }
+
+.ov-home #ov-landing-headline {
+  display: table-cell;
+  vertical-align: middle; }
+
+.ov-home .ov-landing-headline-sub {
+  display: table-row;
+  font-size: 1.3rem;
+  vertical-align: middle; }
 
 .ov-home .ov-landing-section {
   background-color: #fff;
@@ -5864,11 +5881,15 @@ h3 {
     padding-left: 25px; }
     .ov-home .ov-features-section > div:first-child {
       padding: 0; }
-  .ov-home .ov-landing-section {
-    display: table; }
-    .ov-home .ov-landing-section .ov-testimonial-section, .ov-home .ov-landing-section .ov-devices {
-      display: table-cell;
-      width: 50%; } }
+  .ov-home .ov-landing {
+    background-image: url("/images/dream-builder.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%; }
+  .ov-home .ov-landing-section .ov-testimonial-section, .ov-home .ov-landing-section .ov-devices {
+    display: table-cell;
+    width: 50%; } }
 
 /*
 * variables
@@ -5954,7 +5975,7 @@ h3 {
   .ov-work .ov-portfolio-tags .uk-badge {
     background-color: #9E9E9E; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (orientation: landscape) {
   .ov-work .ov-porfolio-img {
     border-radius: 3px 0 0 0;
     border-bottom: none;
@@ -5965,7 +5986,7 @@ h3 {
     position: absolute;
     left: 258px; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .ov-work .ov-portfolio-item {
     width: 667px; }
   .ov-work .ov-porfolio-img {
@@ -5982,7 +6003,7 @@ h3 {
     width: 280px;
     left: 387px; } }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 960px) and (orientation: landscape) {
   .ov-work .ov-portfolio-item {
     width: 849px; }
   .ov-work .ov-portfolio-body,

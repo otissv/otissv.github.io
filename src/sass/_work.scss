@@ -94,7 +94,7 @@ $ov-portfolio-body-padding: 15px;
   }
 
 
-  @media screen and (min-width: $breakpoint-small) {
+  @media screen and (min-width: $breakpoint-small) and (orientation:landscape) {
     .ov-porfolio-img {
       border-radius: $border-radius 0 0 0;
       border-bottom: none;
@@ -110,7 +110,7 @@ $ov-portfolio-body-padding: 15px;
   }
 
 
-  @media screen and (min-width: $breakpoint-medium) {
+  @media screen and (min-width: $breakpoint-medium)  and (orientation:landscape){
     .ov-headline {
       // height: 80vh;
     }
@@ -142,7 +142,7 @@ $ov-portfolio-body-padding: 15px;
   }
 
 
-  @media screen and (min-width: $breakpoint-large) {
+  @media screen and (min-width: $breakpoint-large)  and (orientation:landscape){
     .ov-portfolio-item {
       width: $portfolio-item-width-large;
     }

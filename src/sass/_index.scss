@@ -64,7 +64,21 @@ $home-nav-item-background-hover: rgba(2, 136, 209, 0.5);
 
   .ov-landing {
     height: 100vh;
+    display: table;
     padding: 53px 5%;
+    @include background-image("/images/dream-builder-port.jpg", '100vh');
+    min-height: 272px;
+  }
+
+  #ov-landing-headline {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .ov-landing-headline-sub {
+    display: table-row;
+    font-size: 1.3rem;
+    vertical-align: middle;
   }
 
   .ov-landing-section {
@@ -109,8 +123,8 @@ $home-nav-item-background-hover: rgba(2, 136, 209, 0.5);
     }
   }
 
-  @media screen and (min-width: $breakpoint-medium) {
 
+  @media screen and (min-width: $breakpoint-medium) {
 
     .ov-features-panel {
       height: 260px;
@@ -135,12 +149,15 @@ $home-nav-item-background-hover: rgba(2, 136, 209, 0.5);
       }
     }
 
+    .ov-landing {
+      @include background-image("/images/dream-builder.jpg", 100vh);
+    }
+
     .ov-landing-section {
-      display: table;
       .ov-testimonial-section, .ov-devices {
         display: table-cell;
-          width: 50%;
-        }
+        width: 50%;
+      }
     }
   }
 

@@ -4066,7 +4066,7 @@ module.exports = function removeClass(element, className) {
 'use strict';
 
 function headlineText() {
-  var maxfontsize = window.innerHeight < 280 ? 50 : 80;
+  var maxfontsize = window.innerHeight < 280 ? 50 : 100;
 
   $('#ov-landing-headline').bigtext({
     maxfontsize: maxfontsize
@@ -4075,6 +4075,7 @@ function headlineText() {
 
 module.exports = function home() {
   headlineText();
+  $('.ov-landing').css('height', $(window).height());
 };
 
 },{}],9:[function(require,module,exports){

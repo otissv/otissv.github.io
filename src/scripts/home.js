@@ -1,7 +1,7 @@
 'use strict';
 
 function headlineText () {
-  let maxfontsize = window.innerHeight < 280 ? 50 : 80;
+  let maxfontsize = window.innerHeight < 280 ? 50 : 100;
 
   $('#ov-landing-headline').bigtext({
     maxfontsize: maxfontsize
@@ -11,4 +11,5 @@ function headlineText () {
 
 module.exports = function home () {
   headlineText();
+  $('.ov-landing').css('height', $(window).height());
 }
