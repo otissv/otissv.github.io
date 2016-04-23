@@ -1,9 +1,9 @@
 /*
 * variables
 */
-$work-background               : rgb(103,58,183);
-$work-nav-item-active          : rgb(147,58,227);
-$work-nav-item-background-hover: rgba(103,58,183,0.85);
+$projects-background               : rgb(103,58,183);
+$projects-nav-item-active          : rgb(147,58,227);
+$projects-nav-item-background-hover: rgba(103,58,183,0.85);
 
 
 
@@ -19,15 +19,15 @@ $ov-portfolio-body-padding: 15px;
 
 
 /*
-* work
+* projects
 */
-.ov-work {
+.ov-projects {
   .ov-background {
-    background-color: $work-background;
+    background-color: $projects-background;
   }
 
   .ov-nav-item.uk-active {
-    border-bottom: 3px solid $work-nav-item-active;
+    border-bottom: 3px solid $projects-nav-item-active;
   }
 
   .ov-portfolio {

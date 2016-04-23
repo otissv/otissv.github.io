@@ -4030,7 +4030,7 @@ module.exports = function common(controllers, page) {
   $('ov-landing').css({ height: viewport });
 };
 
-},{"./helpers/add-class":6,"./helpers/remove-class":7,"./style":10,"velocity-animate":1}],5:[function(require,module,exports){
+},{"./helpers/add-class":6,"./helpers/remove-class":7,"./style":11,"velocity-animate":1}],5:[function(require,module,exports){
 'use strict';
 
 module.exports = function contact() {};
@@ -4092,7 +4092,7 @@ require('../../vendor/uikit/js/components/parallax');
 var common = require('./common');
 var home = require('./home');
 var about = require('./about');
-var work = require('./work');
+var projects = require('./projects');
 var contact = require('./contact');
 var blog = require('./blog');
 
@@ -4105,7 +4105,7 @@ $(document).ready(function () {
   var controllers = {
     home: home,
     about: about,
-    work: work,
+    projects: projects,
     contact: contact,
     blog: blog
   };
@@ -4122,8 +4122,8 @@ $(document).ready(function () {
     case '/about.html':
       about();
       break;
-    case '/work.html':
-      work();
+    case '/projects.html':
+      projects();
       break;
     case '/contact.html':
       contact();
@@ -4135,32 +4135,7 @@ $(document).ready(function () {
   }
 });
 
-},{"../../vendor/uikit/js/components/parallax":12,"../../vendor/uikit/js/uikit":13,"./about":2,"./blog":3,"./common":4,"./contact":5,"./home":8,"./work":11}],10:[function(require,module,exports){
-'use strict';
-
-module.exports = {
-  home: {
-    backgroundColor: '#0288D1'
-  },
-
-  about: {
-    backgroundColor: '#388E3C'
-  },
-
-  work: {
-    backgroundColor: '#673AB7'
-  },
-
-  contact: {
-    backgroundColor: '#D32F2F'
-  },
-
-  blog: {
-    backgroundColor: '#E5E5E5'
-  }
-};
-
-},{}],11:[function(require,module,exports){
+},{"../../vendor/uikit/js/components/parallax":12,"../../vendor/uikit/js/uikit":13,"./about":2,"./blog":3,"./common":4,"./contact":5,"./home":8,"./projects":10}],10:[function(require,module,exports){
 'use strict';
 
 function portfolioItemsScroll(items) {
@@ -4200,7 +4175,7 @@ function headlineTextResize() {
   });
 }
 
-module.exports = function work() {
+module.exports = function projects() {
   var portfolioItems = $('.ov-portfolio-item');
   var firstItem = portfolioItems[0];
 
@@ -4209,6 +4184,31 @@ module.exports = function work() {
   $(firstItem).find('.ov-portfolio-item-overlay').css({ opacity: 0 });
   $(firstItem).addClass('ov-portfolio-item-inView');
   portfolioItemsScroll(portfolioItems);
+};
+
+},{}],11:[function(require,module,exports){
+'use strict';
+
+module.exports = {
+  home: {
+    backgroundColor: '#0288D1'
+  },
+
+  about: {
+    backgroundColor: '#388E3C'
+  },
+
+  projects: {
+    backgroundColor: '#673AB7'
+  },
+
+  contact: {
+    backgroundColor: '#D32F2F'
+  },
+
+  blog: {
+    backgroundColor: '#E5E5E5'
+  }
 };
 
 },{}],12:[function(require,module,exports){

@@ -39,7 +39,7 @@ function headlineTextResize () {
 }
 
 
-module.exports = function work () {
+module.exports = function projects () {
   const portfolioItems = $('.ov-portfolio-item');
   const firstItem = portfolioItems[0];
 

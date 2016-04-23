@@ -1,7 +1,7 @@
 'use strict';
 
 const style = require('../scripts/style');
-const partials = ['index', 'work', 'about', 'contact', 'blog'];
+const partials = ['index', 'projects', 'about', 'contact', 'blog'];
 
 module.exports = [
   {
@@ -33,11 +33,11 @@ module.exports = [
   },
   {
     partials: partials,
-    output: 'work',
+    output: 'projects',
     data: {
-      title: 'My work - Otissv Web, JavaScript Developer',
-      page: 'work',
-      backgroundColor: style.work.backgroundColor
+      title: 'My projects - Otissv Web, JavaScript Developer',
+      page: 'projects',
+      backgroundColor: style.projects.backgroundColor
     }
   },
   {
@@ -46,7 +46,7 @@ module.exports = [
     data: {
       title: 'Blog',
       page: 'blog',
-      backgroundColor: style.work.backgroundColor
+      backgroundColor: style.projects.backgroundColor
     }
   }
 ];

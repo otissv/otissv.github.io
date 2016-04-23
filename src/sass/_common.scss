@@ -141,7 +141,7 @@ h3 {
 
   li {
     text-align: center;
-    width: (100% / 5);
+    width: (100% / 4);
 
     a {
       color: $text-color;
@@ -277,7 +277,7 @@ h3 {
  */
 #ov-home-main,
 #ov-about-main,
-#ov-work-main,
+#ov-projects-main,
 #ov-contact-main {
   display: none;
   opacity: 0;
@@ -285,7 +285,7 @@ h3 {
 }
 
 .ov-about,
-.ov-work,
+.ov-projects,
 .ov-contact{
   .ov-headline {
     padding-top: 80px;
@@ -295,7 +295,7 @@ h3 {
 
 .ov-home #ov-home-main,
 .ov-about #ov-about-main,
-.ov-work #ov-work-main,
+.ov-projects #ov-projects-main,
 .ov-contact  #ov-contact-main {
   display: block;
 }

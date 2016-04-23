@@ -9,7 +9,7 @@ module.exports = {
     backgroundColor: '#388E3C'
   },
 
-  work: {
+  projects: {
     backgroundColor: '#673AB7'
   },
 

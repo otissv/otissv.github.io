@@ -10,7 +10,7 @@ require('../../vendor/uikit/js/components/parallax');
 const common = require('./common');
 const home = require('./home');
 const about = require('./about');
-const work = require('./work');
+const projects = require('./projects');
 const contact = require('./contact');
 const blog = require('./blog');
 
@@ -23,7 +23,7 @@ $(document).ready(function() {
   const controllers = {
     home: home,
     about: about,
-    work: work,
+    projects: projects,
     contact: contact,
     blog: blog,
   }
@@ -41,8 +41,8 @@ $(document).ready(function() {
      case '/about.html':
        about();
        break;
-     case '/work.html':
-       work();
+     case '/projects.html':
+       projects();
        break;
      case '/contact.html':
        contact();
