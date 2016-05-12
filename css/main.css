@@ -5873,12 +5873,11 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .ov-home .ov-features-panel {
-    height: 300px; }
-    .ov-home .ov-features-panel .ov-features-img {
-      height: 110px; }
-      .ov-home .ov-features-panel .ov-features-img img {
-        height: 100px;
-        width: 217px; }
+    height: 320px; }
+    .ov-home .ov-features-panel .ov-features-img img {
+      margin-left: auto;
+      margin-right: auto;
+      width: 217px; }
   .ov-home .ov-features-section > div {
     padding-left: 25px; }
     .ov-home .ov-features-section > div:first-child {
@@ -5919,6 +5918,14 @@ h3 {
     margin-top: 0; }
   .ov-about .ov-about-section li {
     padding-bottom: 10px; }
+
+.ov-about .otis-image {
+  background: rgba(224, 224, 224, 0.1);
+  border-radius: 5%;
+  float: left;
+  margin: 0 15px 15px 0;
+  height: 130px;
+  width: 130px; }
 
 /*
 * variables
