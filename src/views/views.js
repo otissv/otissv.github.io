@@ -8,7 +8,7 @@ module.exports = [
     partials: partials,
     output: 'index',
     data: {
-      title: 'Otissv - Web, JavaScript Developer',
+      title: 'Otissv - Full Stack Developer',
       page: 'home',
       backgroundColor: style.home.backgroundColor
     },
@@ -17,7 +17,7 @@ module.exports = [
     partials: partials,
     output: 'about',
     data: {
-      title: 'About Me - Otissv Web, JavaScript Developer',
+      title: 'About Me | Otissv - Full Stack Developer',
       page: 'about',
       backgroundColor: style.about.backgroundColor
     },
@@ -26,7 +26,7 @@ module.exports = [
     partials: partials,
     output: 'contact',
     data: {
-      title: 'Let\'s chat - Otissv Web, JavaScript Developer',
+      title: 'Let\'s chat | Otissv - Full Stack Developer',
       page: 'contact',
       backgroundColor: style.contact.backgroundColor
     },
@@ -35,7 +35,7 @@ module.exports = [
     partials: partials,
     output: 'projects',
     data: {
-      title: 'My projects - Otissv Web, JavaScript Developer',
+      title: 'My projects | Otissv - Full Stack Developer',
       page: 'projects',
       backgroundColor: style.projects.backgroundColor
     }
@@ -44,7 +44,7 @@ module.exports = [
     partials: partials,
     output: 'blog',
     data: {
-      title: 'Blog',
+      title: 'Blog | Otissv - Full Stack Developer',
       page: 'blog',
       backgroundColor: style.projects.backgroundColor
     }
