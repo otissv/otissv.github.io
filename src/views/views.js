@@ -8,7 +8,7 @@ module.exports = [
     partials: partials,
     output: 'index',
     data: {
-      title: 'Otissv - Full Stack Developer',
+      title: 'Otissv - Otis Virginie Full Stack Developer',
       page: 'home',
       backgroundColor: style.home.backgroundColor
     },

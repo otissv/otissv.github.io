@@ -1,5 +1,8 @@
 'use strict';
 
+
+require("babel-polyfill");
+
 // uikit modules
 require('../../vendor/uikit/js/uikit');
 require('../../vendor/uikit/js/components/parallax');
