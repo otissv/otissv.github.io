@@ -5809,7 +5809,7 @@ h3 {
   border-radius: 3px;
   border: 1px solid #EEEEEE; }
   .ov-home .ov-features-panel .ov-features-img {
-    height: 140px;
+    height: 165px;
     position: relative; }
     .ov-home .ov-features-panel .ov-features-img img {
       position: absolute;
@@ -5869,15 +5869,21 @@ h3 {
       text-align: center;
       transform: translateX(-30px); }
     .ov-home .ov-landing-section .ov-testimonial-section .ov-testimonial {
+      max-width: 600px;
       text-align: left; }
+    .ov-home .ov-landing-section .ov-testimonial-section .ov-testimonial-who {
+      display: block;
+      margin: 0 auto; }
 
 @media screen and (min-width: 768px) {
   .ov-home .ov-features-panel {
     height: 320px; }
-    .ov-home .ov-features-panel .ov-features-img img {
-      margin-left: auto;
-      margin-right: auto;
-      width: 217px; }
+    .ov-home .ov-features-panel .ov-features-img {
+      height: 120px; }
+      .ov-home .ov-features-panel .ov-features-img img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 217px; }
   .ov-home .ov-features-section > div {
     padding-left: 25px; }
     .ov-home .ov-features-section > div:first-child {
